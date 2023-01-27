@@ -1,0 +1,39 @@
+---
+# for jekyll
+---
+
+@import "modules/_reset.scss";
+@import "modules/_vars.scss";
+@import "modules/_fonts.scss";
+@import "modules/_header.scss";
+@import "modules/_footer.scss";
+@import "modules/_index.scss";
+
+:root {
+    --clr-light: hsl(0, 0%, 90%);
+    --clr-dark: hsl(0, 0%, 10%);
+    --clr-primary: hsl(0, 18%, 34%);
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+}
+
+.darkmode {
+    --clr-light: hsl(0, 0%, 90%);
+    --clr-dark: hsl(0, 0%, 10%);
+    --clr-primary: hsl(0, 18%, 34%);
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+body {
+    font-family: robotoregular;
+    background: var(--background);
+    color: var(--foreground);
+}
+
+.separator {
+    border: none;
+    width: 75px;
+    height: 12px;
+    background-color: hsl(0, 18%, 34%);
+}

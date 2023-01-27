@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="jmillermedia.net - all the multimedia experience you would need for your project.">
+    <!-- START Open Graph Protocol -->
+    <meta property="og:title" content="jmillermedia.net - Multimedia Specialist">
+    <meta property="og:description" content="I'm a creative jack of all trades for digital media with 20 years experience in the fields of audio and video; complementing recent education in responsive web design, 3D animation, and graphic design.">
+    <meta property="og:image" content="https://www.jmillermedia.net/images/logoJmillermedia.svg">
+    <!-- END Open Graph Protocol -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/logoJmillermedia.svg">
+    <title>{{ page.title }} - jmillermedia.github.io</title>
+</head>
+<body>
+<h1 class="hidden">{{ title }}</h1>
+<header id="mainHeader">
+    <h2 class="hidden">Website Functionality: Open navigation and toggle light and dark mode.</h2>
+
+    <nav id="mainNav">
+    <h2 class="hidden">Main Navigation</h2>
+    <ul>
+        <li><a href="about">About</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="resume">Resume</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li id="headerLogo"><a href="index"><img width="140" height="110" src="assets/images/logoJmillermedia.svg" alt="jmillermedia.net logo"></a></li>
+    </ul>
+    </nav>
+    <button id="burgerNav" aria-label="open main navigation">
+        <svg class="ham hamRotate burger" viewBox="0 0 100 100" width="80">
+            <path class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle"
+                d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+    </button>
+    <button id="lightDarkToggle" aria-label="toggle light and dark modes">
+        <svg id="lightDark" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 120 120">
+            <circle id="fullFill" class="light" cx="60" cy="60" r="30"/>
+            <g id="Sun" class="light">
+              <polygon points="60 27.43 52.5 27.43 56.25 20.93 60 14.44 63.75 20.93 67.5 27.43 60 27.43"/>
+              <polygon points="60 92.57 67.5 92.57 63.75 99.07 60 105.56 56.25 99.07 52.5 92.57 60 92.57"/>
+              <polygon points="92.57 60 92.57 52.5 99.07 56.25 105.56 60 99.07 63.75 92.57 67.5 92.57 60"/>
+              <polygon points="27.43 60 27.43 67.5 20.93 63.75 14.44 60 20.93 56.25 27.43 52.5 27.43 60"/>
+              <polygon points="83.03 83.03 88.34 77.73 90.28 84.97 92.22 92.22 84.97 90.28 77.73 88.34 83.03 83.03"/>
+              <polygon points="36.97 36.97 31.66 42.27 29.72 35.02 27.78 27.78 35.02 29.72 42.27 31.66 36.97 36.97"/>
+              <polygon points="83.03 36.97 77.73 31.66 84.97 29.72 92.22 27.78 90.28 35.02 88.34 42.27 83.03 36.97"/>
+              <polygon points="36.97 83.03 42.27 88.34 35.02 90.28 27.78 92.22 29.72 84.97 31.66 77.73 36.97 83.03"/>
+            </g>
+            <path id="Cresent" d="M47.73,60A30,30,0,0,1,68.87,31.33a30,30,0,1,0,0,57.34A30,30,0,0,1,47.73,60Z"/>
+            <circle id="Outline" cx="60" cy="60" r="30" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+          </svg>
+    </button>
+</header>
+
+{{ content }}
+
+<footer>
+    <img width="295" height="55" class="filigreeFooter" src="assets/images/filigreeBottom.svg" alt="filigree">
+    <div id="footerMain">
+        <p>I've got it covered.</p>
+        <hr class="separator">
+        <p>AUDIO • VIDEO • WEB • MEDIA</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><img width="42" height="42" src="assets/images/logoLinkedIn.svg" alt="LinkedIn Logo"></a></li>
+            <li><a href="#"><img width="42" height="42" src="assets/images/logoYouTube.svg" alt="Youtube Logo"></a></li>
+            <li><a href="#"><img width="42" height="42" src="assets/images/logoSoundCloud.svg" alt="SoundCloud Logo"></a></li>
+            <li><a href="#"><img width="42" height="42" src="assets/images/logoGitHub.svg" alt="GitHub Logo"></a></li>
+        </ul>
+        <p>© Copyright 2022 jmillermedia.net</p>
+    </nav>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/darkmode.js"></script>
+</body>
+</html>

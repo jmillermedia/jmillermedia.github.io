@@ -1,0 +1,52 @@
+---
+title: About Me
+layout: default
+---
+
+<main>
+    <h2>{{ page.title }}</h2>
+    <section class="mySkills">
+        <h3>Skills</h3>
+        <ul class="mySkills__skillset">
+            <li>
+                <h4>Web Development</h4>
+                <ul>
+                    {% for skill in site.skills %}
+                        {% if skill.group == 'webdev' %}
+                            <li>
+                                <h5>{{ skill.name }}</h5>
+                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <h4>Adobe Creative Cloud</h4>
+                <ul>
+                    {% for skill in site.skills %}
+                        {% if skill.group == 'adobe' %}
+                            <li>
+                                <h5>{{ skill.name }}</h5>
+                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <h4>Audio & Visual</h4>
+                <ul>
+                    {% for skill in site.skills %}
+                        {% if skill.group == 'audioVisual' %}
+                            <li>
+                                <h5>{{ skill.name }}</h5>
+                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>

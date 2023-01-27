@@ -1,0 +1,30 @@
+name: jmillermedia.github.io
+collections:
+  skills:
+    order:
+      - HTML.md
+      - CSS.md
+      - JS.md
+      - shopify.md
+      - PHP.md
+      - SASS.md
+      - Git.md
+      - vue.md
+      - mySQL.md
+      - figma.md
+      - photoshop.md
+      - illustrator.md
+      - afterEffects.md
+      - premiere.md
+      - xd.md
+      - inDesign.md
+      - lightroom.md
+      - videoEditing.md
+      - graphicDesign.md
+      - motionDesign.md
+      - photography.md
+      - videoStreaming.md
+      - audioEngineering.md
+      - audioDesign.md
+      - audioEditing.md
+      - musicComposition.md

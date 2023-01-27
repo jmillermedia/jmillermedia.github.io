@@ -1,0 +1,49 @@
+#mainHero {
+    height: 100vh;
+    width: 100%;
+    margin-top: -85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/filigreeHero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    font-size: 3rem;
+    &__name {
+        padding-left: 2rem;
+    }
+    &__title {
+        font-family: 'robotomedium', sans-serif;
+        padding-left: 4rem;
+    }
+}
+
+#mainBlurb {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    &__image {
+        float: left;
+        padding: 0 1rem 0 0;
+    }
+    &__link {
+        display: block;
+        max-width: 300px;
+        font-size: 1rem;
+        background-color: $main-red;
+        color: $main-white;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        &:hover, &:active {
+            filter: brightness(120%);
+        }
+    }
+}
