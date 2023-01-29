@@ -4,12 +4,12 @@
 
 /* SASS */
 
-@import "modules/_reset.scss";
-@import "modules/_vars.scss";
-@import "modules/_fonts.scss";
-@import "modules/_header.scss";
-@import "modules/_footer.scss";
-@import "modules/_index.scss";
+@import "reset.scss";
+@import "vars.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
 
 :root {
     --clr-light: hsl(0, 0%, 90%);
