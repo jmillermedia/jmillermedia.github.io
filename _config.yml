@@ -1,4 +1,7 @@
 name: jmillermedia.github.io
+sass:
+  style: compressed
+  sass_dir: _sass
 collections:
   skills:
     order:
