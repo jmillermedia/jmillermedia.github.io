@@ -1,0 +1,142 @@
+{
+    "my-skills": [
+    {
+        "name": "Web Development",
+        "icon": "about-webDev.webp",
+        "skills": [
+        {
+            "name": "HTML",
+            "filepath": "assets/images/logos/logoHTML.svg"
+        },
+        {
+            "name": "CSS",
+            "filepath": "assets/images/logos/logoCSS.svg"
+        },
+        {
+            "name": "JavaScript",
+            "filepath": "assets/images/logos/logoJavaScript.svg"
+        },
+        {
+            "name": "Shopify (Liquid)",
+            "filepath": "assets/images/logos/logoShopify.svg"
+        },
+        {
+            "name": "PHP",
+            "filepath": "assets/images/logos/logoPHP.svg"
+        },
+        {
+            "name": "VSCode",
+            "filepath": "assets/images/logos/logoVSCode.svg"
+        },
+        {
+            "name": "SASS",
+            "filepath": "assets/images/logos/logoSASS.svg"
+        },
+        {
+            "name": "Git <span class='skill__subCat'>(Version Control)</span>",
+            "filepath": "assets/images/logos/logoGit.svg"
+        },
+        {
+            "name": "Vue",
+            "filepath": "assets/images/logos/logoVue.svg"
+        },
+        {
+            "name": "MySQL",
+            "filepath": "assets/images/logos/logoMySQL.svg"
+        },
+                {
+            "name": "Jekyll",
+            "filepath": "assets/images/logos/logoJekyll.svg"
+        },
+        {
+            "name": "Figma",
+            "filepath": "assets/images/logos/logoFigma.svg"
+        }
+        ]
+    },
+    {
+        "name": "Adobe Creative Cloud",
+        "icon": "about-adobe.svg",
+        "skills": [
+        {
+            "name": "Photoshop",
+            "filepath": "assets/images/logos/logoPhotoshop.svg"
+        },
+        {
+            "name": "Illustrator",
+            "filepath": "assets/images/logos/logoIllustrator.svg"
+        },
+        {
+            "name": "After Effects",
+            "filepath": "assets/images/logos/logoAfterEffects.svg"
+        },
+        {
+            "name": "Premiere",
+            "filepath": "assets/images/logos/logoPremiere.svg"
+        },
+        {
+            "name": "Adobe XD",
+            "filepath": "assets/images/logos/logoXD.svg"
+        },
+        {
+            "name": "Media Encoder",
+            "filepath": "assets/images/logos/logoMediaEncoder.svg"
+        },
+        {
+            "name": "InDesign",
+            "filepath": "assets/images/logos/logoInDesign.svg"
+        },
+        {
+            "name": "Lightroom",
+            "filepath": "assets/images/logos/logoLightroom.svg"
+        }
+        ]
+    },
+    {
+        "name": "Audio & Visual",
+        "icon": "about-audioVideo.webp",
+        "skills": [
+        {
+            "name": "Video Editing",
+            "filepath": "assets/images/logos/logoVideoEditing.svg"
+        },
+        {
+            "name": "Graphic Design",
+            "filepath": "assets/images/logos/logoGraphicDesign.svg"
+        },
+        {
+            "name": "Motion Design",
+            "filepath": "assets/images/logos/logoMotionDesign.svg"
+        },
+        {
+            "name": "3D Design",
+            "filepath": "assets/images/logos/logoC4D.svg"
+        },
+        {
+            "name": "Photography",
+            "filepath": "assets/images/logos/logoPhotography.svg"
+        },
+        {
+            "name": "Video Streaming",
+            "filepath": "assets/images/logos/logoOBS.svg"
+        },
+        {
+            "name": "Audio Engineering",
+            "filepath": "assets/images/logos/logoAudioEngineering.svg"
+        },
+        {
+            "name": "Audio Design",
+            "filepath": "assets/images/logos/logoAudioDesign.svg"
+        },
+        {
+            "name": "Audio Editing",
+            "filepath": "assets/images/logos/logoAudioEditing.svg"
+        },
+        {
+            "name": "Music Composition",
+            "filepath": "assets/images/logos/logoMusicComposition.svg"
+        }
+        ]
+    }
+    ]
+}

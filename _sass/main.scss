@@ -1,9 +1,10 @@
-@import "modules/_reset.scss";
-@import "modules/_vars.scss";
-@import "modules/_fonts.scss";
-@import "modules/_header.scss";
-@import "modules/_footer.scss";
-@import "modules/_index.scss";
+@use "modules/_reset.scss";
+@use "modules/_vars.scss";
+@use "modules/_fonts.scss";
+@use "modules/_header.scss";
+@use "modules/_footer.scss";
+@use "modules/_index.scss";
+@use "modules/_about.scss";
 
 :root {
     --clr-light: hsl(0, 0%, 90%);
@@ -11,6 +12,7 @@
     --clr-primary: hsl(0, 18%, 34%);
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
+    --animation-timing: 0.5s ease-in-out;
 }
 
 .darkmode {
@@ -25,11 +27,20 @@ body {
     font-family: robotoregular;
     background: var(--background);
     color: var(--foreground);
+    transition: background var(--animation-timing), color var(--animation-timing);
+}
+
+.sectionTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: bold;
 }
 
 .separator {
     border: none;
     width: 75px;
     height: 12px;
-    background-color: hsl(0, 18%, 34%);
+    background-color: vars.$main-white;
 }

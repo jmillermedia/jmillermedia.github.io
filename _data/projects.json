@@ -1,0 +1,25 @@
+{
+    "my-projects":
+    [
+        {
+            "name": "Kavorka Cosmetics",
+            "main-image": "#",
+            "date": "2024-01-14",
+            "description": "lorem",
+            "skills": ["Photoshop", "Illustrator", "Premiere", "After Effects", "InDesign", "Video Editing", "Graphic Design", "Motion Design"],
+            "files":
+            [
+                {
+                    "name": "file 1",
+                    "preview-url": "path/to/url2.webp",
+                    "url": "path/to/file_1.pdf"
+                },
+                {
+                    "name": "file 2",
+                    "preview-url": "path/to/url2.webp",
+                    "url": "path/to/file_2.pdf"
+                }
+            ]
+        }
+    ]
+}

@@ -4,5 +4,39 @@ layout: default
 ---
 
 <main>
-    <h2>Projects</h2>
+    <h2 class="sectionTitle">{{ page.title }}</h2>
+    <hr class="separator">
+    <section id="projects">
+        {% assign projects_data = site.data.projects["my-projects"] %}
+        {% assign skills_data = site.data.skills["my-skills"] %}
+        {% for project in projects_data %}
+            <div class="project">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.date }}</p>
+                <p>{{ project["main-image"] }}</p>
+                <p>{{ project.description }}</p>
+                <ul>
+                    {% for skill_name in project.skills %}
+                        {% for category in skills_data %}
+                            {% assign skill_data_category = category.skills | where: "name", skill_name | first %}
+                            {% if skill_data_category %}
+                                {% assign skill_data = skill_data_category %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if skill_data %}
+                            <li>
+                                <img src="{{ site.baseurl }}/{{ skill_data.filepath }}" alt="{{ skill_name }} icon" title="{{ skill_name }}">
+                            </li>
+                            {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for file in project.files %}
+                        <li><a href="{{ site.baseurl }}/{{ file.url }}">{{ file.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </section>
 </main>
