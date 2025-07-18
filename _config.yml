@@ -8,12 +8,13 @@ collections:
       - HTML.md
       - CSS.md
       - JS.md
-      - shopify.md
       - PHP.md
+      - VSCode.md
       - SASS.md
       - Git.md
       - vue.md
       - mySQL.md
+      - shopify.md
       - figma.md
       - photoshop.md
       - illustrator.md

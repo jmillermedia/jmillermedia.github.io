@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     margin-top: -100vh;
-    transition: margin-top 0.5s ease-in-out;
+    transition: margin-top var(--animation-timing);
 
     ul {
         display: flex;
@@ -26,11 +26,21 @@
             text-decoration: none;
             color: var(--foreground);
             font-size: 2rem;
+            pointer-events: auto;
         }
     }
 
     & img {
         margin-top: 4rem;
+    }
+
+    &__bottom {
+        height: 5px;
+        width: 100%;
+        background: rgb(102,71,71);
+        background: linear-gradient(90deg, rgba(102,71,71,1) 30%, rgba(30,125,210,1) 100%);
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -40,18 +50,20 @@
 
 #mainHeader {
     z-index: 999998;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    pointer-events: none;
 
     & button {
         z-index: 999999;
         position: sticky;
         background: none;
         border: none;
+        pointer-events: auto;
 
         .ham {
             cursor: pointer;
@@ -141,8 +153,9 @@
         display: none;
     }
 
-    #lightDarkToggle {
-        position: absolute !important;
-        right: 0;
-    }
+}
+.lightDarkToggle {
+    position: absolute !important;
+    right: 1rem;
+    top: 1.25rem;
 }

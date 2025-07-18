@@ -1,0 +1,202 @@
+@use "modules/_vars.scss";
+
+.aboutPage {
+    & p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        max-width: 40ch;
+        margin: 0 auto;
+        padding: 1.5rem;
+        hyphens: auto;
+        text-align: justify;
+    }
+
+    & h3 {
+        background-color: vars.$main-blue;
+        color: vars.$main-white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+.mainBlurb {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__image {
+        border-radius: 25%;
+        border: solid 3px vars.$main-blue;
+        margin-top: .75rem;
+    }
+}
+
+.mySkills {
+    & h4 {
+        font-size: 1.5rem;
+        padding: 1rem 0 1rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        max-height: 359px;
+    }
+
+    &__skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1.5rem;
+
+        &--title {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            & span {
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                margin-left: 1rem;
+            }
+        }
+
+        &--skillset {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+
+            & li {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background: hsl(0, 0%, 25%);
+                border-radius: 4px;
+                padding: 0 0.5rem;
+                color: white;
+                height: 100%;
+                font-size: 12px;
+                font-weight: 500;
+                min-height: 25px;
+
+                & img {
+                    width: 12px;
+                    max-height: 12px;
+                    padding-right: 0.5rem;
+                }
+            }
+
+            &.open {
+                max-height: 600px;
+            }
+        }
+
+        & #skillExpand {
+            display: inline-block;
+            transform-origin: center center;
+            transition: transform 0.3s ease;
+
+            &.rotated {
+                transform: rotate(180deg);
+            }
+        }
+
+        &__subCat {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.education {
+    .london {
+        background-image: url('/assets/images/london600.webp');
+    }
+    .toronto {
+        background-image: url('/assets/images/toronto600.webp');
+    }
+    & h4 {
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.75rem;
+        text-shadow: 0 0 5px black;
+        color: vars.$main-white;
+        padding: 2rem;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        transition: background-position 0.1s ease-out;
+    }
+}
+
+
+
+.awards {
+    & .award {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 0.15fr auto;
+        grid-template-rows: auto auto;
+        gap: 0;
+        grid-template-areas:
+        "image title"
+        "image date"
+        "description description";
+        &__icon {
+            height: 80px;
+            grid-area: image;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+            width: 80px;
+        }
+        &__icon img{
+            max-width: 40px;
+        }
+        & h4 {
+            grid-area: title;
+            padding: 0;
+            margin: 0;
+            align-self: center;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        & h5 {
+            grid-area: date;
+            margin: 0;
+            align-self: center;
+            font-weight: 100;
+            text-decoration: underline;
+        }
+    }
+    & p {
+        grid-area: description;
+        padding: 0.5rem 0;
+    }
+}
+

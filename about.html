@@ -3,50 +3,58 @@ title: About Me
 layout: default
 ---
 
-<main>
-    <h2>{{ page.title }}</h2>
+<main class="aboutPage">
+    <h2 class="sectionTitle">{{ page.title }}</h2>
+    <hr class="separator">
+
+    {% include main-blurb.html %}
+
     <section class="mySkills">
         <h3>Skills</h3>
-        <ul class="mySkills__skillset">
-            <li>
-                <h4>Web Development</h4>
-                <ul>
-                    {% for skill in site.skills %}
-                        {% if skill.group == 'webdev' %}
-                            <li>
-                                <h5>{{ skill.name }}</h5>
-                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
-                            </li>
-                        {% endif %}
+        {% for category in site.data.skills.my-skills %}
+            <div class="mySkills__skill">
+                <div class="mySkills__skill--title">
+                    <h4>{{ category.name }}</h4>
+                    <span id="skillExpand">+</span>
+                </div>
+                <ul class="mySkills__skill--skillset">
+                    {% for skill in category.skills %}
+                    <li>
+                        <img src="{{ skill.filepath }}" alt="{{ skill.name }} icon" class="skill-icon">
+                        <span>{{ skill.name }}</span>
+                    </li>
                     {% endfor %}
                 </ul>
-            </li>
-            <li>
-                <h4>Adobe Creative Cloud</h4>
-                <ul>
-                    {% for skill in site.skills %}
-                        {% if skill.group == 'adobe' %}
-                            <li>
-                                <h5>{{ skill.name }}</h5>
-                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-            <li>
-                <h4>Audio & Visual</h4>
-                <ul>
-                    {% for skill in site.skills %}
-                        {% if skill.group == 'audioVisual' %}
-                            <li>
-                                <h5>{{ skill.name }}</h5>
-                                <img src="{{ skill.imagepath }}" alt="{{ skill.name }} logo">
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-        </ul>
+            </div>
+        {% endfor %}
+    </section>
+
+    <section class="education">
+        <h3>Education</h3>
+        <h4 class="toronto">Trebas Institute<br>Toronto, Ontario</h4>
+        <p>I attended Trebas Institute in Toronto, Ontario in 2003, enrolling in their Recorded Music Production program. The curriculum offered a comprehensive mix of audio engineering, music production, and music business. During my time at Trebas, I gained hands-on experience working with professional audio equipment in studio labs, most notably at the CBC studios in Toronto, where I trained in a real-world recording environment. I developed expert knowledge in audio engineering and post-production audio.</p>
+        <h4 class="london">Fanshawe College<br>London, Ontario</h4>
+        <p>Building on my strong background in media, the next natural step was enrolling in Fanshawe College’s Interactive Media Design program. The program is designed to develop multi-disciplinary contributors in the fields of media, web development, and design.<br>
+        During my studies, I explored the fundamentals of 3D design, graphic design, and motion design, using industry-standard tools such as Adobe Creative Suite and Cinema 4D. I also gained a solid foundation in responsive web development, learning how these creative tools integrate with core programming languages used in modern web design.</p>
+    </section>
+
+    <section class="awards">
+        <h3>Awards</h3>
+                <div class="award">
+            <div class="award__icon">
+                <img src="assets/images/award-trophy.svg" alt="award certificate">
+            </div>
+            <h4>Young Audio Visual Composer Award</h4>
+            <h5>January 2012 • Issued by SOCAN </h5>
+            <p>In 2012, I received an industry award for composing the official theme song for the Canadian film Unrivaled. A fusion of rap and heavy rock, the track was crafted in close collaboration with the film’s director to match the movie’s intensity and tone. The award came through a nationwide competition and remains a proud milestone in my creative career.</p>
+        </div>
+        <div class="award">
+            <div class="award__icon">
+                <img src="assets/images/award-certificate.svg" alt="award certificate">
+            </div>
+            <h4>President's Honour Roll</h4>
+            <h5>April, 2021 • Issued by Fanshawe College </h5>
+            <p>I was named to the President’s Honour Roll at Fanshawe College for graduating with a cumulative GPA of 4.05. This distinction recognizes students who achieve academic excellence across the entire program, reflecting consistent performance, dedication, and mastery of their field. It was an honour to complete the program at the top of my class.</p>
+        </div>
     </section>
 </main>
