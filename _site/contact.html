@@ -61,9 +61,46 @@
         </button>
     </header>
     
-<main>
+<main class="contactPage">
     <h2 class="sectionTitle">Contact Me</h2>
     <hr class="separator">
+    <p>Now that we're better acquainted, feel free to reach out to me for any project or role you may have that fits my skill set.</p>
+    <div class="contactPage__subjectSelect">
+        <p>How can I <span>Help?</span></p>
+        <ul>
+            <li>Audio</li>
+            <li>Video</li>
+            <li>Web</li>
+            <li>Graphics</li>
+            <li>Media</li>
+            <li>Other</li>
+        </ul>
+    </div>
+    <section class="contact">
+        <form class="contact-form" method="POST" action="#">
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </main>
 
 
