@@ -1,10 +1,11 @@
-@use "modules/_reset.scss";
-@use "modules/_vars.scss";
-@use "modules/_fonts.scss";
-@use "modules/_header.scss";
-@use "modules/_footer.scss";
-@use "modules/_index.scss";
-@use "modules/_about.scss";
+@import "modules/_reset.scss";
+@import "modules/_vars.scss";
+@import "modules/_fonts.scss";
+@import "modules/_header.scss";
+@import "modules/_footer.scss";
+@import "modules/_index.scss";
+@import "modules/_about.scss";
+@import "modules/_contact.scss";
 
 :root {
     --clr-light: hsl(0, 0%, 90%);
@@ -42,5 +43,5 @@ body {
     border: none;
     width: 75px;
     height: 12px;
-    background-color: vars.$main-white;
+    background-color: $main-white;
 }
