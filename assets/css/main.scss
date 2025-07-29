@@ -1,4 +1,12 @@
 ---
 ---
 
-@import 'main.scss';
+@use "modules/vars";
+@use "modules/fonts";
+@use "modules/reset";
+@use "modules/base";
+@use "modules/header";
+@use "modules/footer";
+@use "modules/index";
+@use "modules/about";
+@use "modules/contact";

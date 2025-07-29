@@ -1,3 +1,4 @@
+@use "modules/vars";
 .aboutPage {
     & p {
         font-size: 1rem;
@@ -10,8 +11,8 @@
     }
 
     & h3 {
-        background-color: $main-blue;
-        color: $main-white;
+        background-color: vars.$main-blue;
+        color: vars.$main-white;
         font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
@@ -27,7 +28,7 @@
     align-items: center;
     &__image {
         border-radius: 25%;
-        border: solid 3px $main-blue;
+        border: solid 3px vars.$main-blue;
         margin-top: .75rem;
     }
 }
@@ -136,7 +137,7 @@
         font-weight: bold;
         font-size: 1.75rem;
         text-shadow: 0 0 5px black;
-        color: $main-white;
+        color: vars.$main-white;
         padding: 2rem;
         background-blend-mode: darken;
         background-color: rgba(0, 0, 0, 0.5);;

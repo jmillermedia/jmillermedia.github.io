@@ -13,6 +13,7 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.2-x64-mingw-ucrt)
+    fiddle (1.1.8)
     forwardable-extended (2.6.0)
     google-protobuf (4.31.1-x64-mingw-ucrt)
       bigdecimal
@@ -52,6 +53,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -75,8 +77,10 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  fiddle
   jekyll (~> 4.4.1)
   jekyll-watch
+  logger
   wdm (>= 0.1.0)
   webrick
 
