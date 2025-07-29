@@ -1,0 +1,50 @@
+.projects {
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: #474747 1px solid;
+    border-radius: 999px;
+    padding: 4px 8px;
+    margin: 4px;
+    font-size: 0.9em;
+}
+
+.projects__list--item {
+    display: flex;
+    flex-direction: column;
+
+
+    &--card {
+        display: flex;
+        flex-direction: column;
+        margin-top: -35%;
+        padding: 2rem;
+        background: hsl(0deg 0% 100% / 0.1);
+        backdrop-filter: blur(16px);
+
+            & h2 {
+                text-align: center;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            & a {
+                display: inline;
+                text-align: center;
+                padding: 1rem;
+                color: #e6e6e6;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: #1a1a1a;
+                font-weight: 100;
+                align-self: center;
+            }
+    }
+}
