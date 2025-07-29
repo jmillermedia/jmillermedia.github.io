@@ -2,6 +2,8 @@ name: jmillermedia.github.io
 sass:
   style: compressed
   sass_dir: _sass
+include:
+  - .well-known
 collections:
   skills:
     order:

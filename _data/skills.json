@@ -6,51 +6,51 @@
         "skills": [
         {
             "name": "HTML",
-            "filepath": "assets/images/logos/logoHTML.svg"
+            "filepath": "assets/images/icons/iconHTML.svg"
         },
         {
             "name": "CSS",
-            "filepath": "assets/images/logos/logoCSS.svg"
+            "filepath": "assets/images/icons/iconCSS.svg"
         },
         {
             "name": "JavaScript",
-            "filepath": "assets/images/logos/logoJavaScript.svg"
+            "filepath": "assets/images/icons/iconJavaScript.svg"
         },
         {
             "name": "Shopify (Liquid)",
-            "filepath": "assets/images/logos/logoShopify.svg"
+            "filepath": "assets/images/icons/iconShopify.svg"
         },
         {
             "name": "PHP",
-            "filepath": "assets/images/logos/logoPHP.svg"
+            "filepath": "assets/images/icons/iconPHP.svg"
         },
         {
             "name": "VSCode",
-            "filepath": "assets/images/logos/logoVSCode.svg"
+            "filepath": "assets/images/icons/iconVSCode.svg"
         },
         {
             "name": "SASS",
-            "filepath": "assets/images/logos/logoSASS.svg"
+            "filepath": "assets/images/icons/iconSASS.svg"
         },
         {
             "name": "Git <span class='skill__subCat'>(Version Control)</span>",
-            "filepath": "assets/images/logos/logoGit.svg"
+            "filepath": "assets/images/icons/iconGit.svg"
         },
         {
             "name": "Vue",
-            "filepath": "assets/images/logos/logoVue.svg"
+            "filepath": "assets/images/icons/iconVue.svg"
         },
         {
             "name": "MySQL",
-            "filepath": "assets/images/logos/logoMySQL.svg"
+            "filepath": "assets/images/icons/iconMySQL.svg"
         },
                 {
             "name": "Jekyll",
-            "filepath": "assets/images/logos/logoJekyll.svg"
+            "filepath": "assets/images/icons/iconJekyll.svg"
         },
         {
             "name": "Figma",
-            "filepath": "assets/images/logos/logoFigma.svg"
+            "filepath": "assets/images/icons/iconFigma.svg"
         }
         ]
     },
@@ -60,35 +60,35 @@
         "skills": [
         {
             "name": "Photoshop",
-            "filepath": "assets/images/logos/logoPhotoshop.svg"
+            "filepath": "assets/images/icons/iconPhotoshop.svg"
         },
         {
             "name": "Illustrator",
-            "filepath": "assets/images/logos/logoIllustrator.svg"
+            "filepath": "assets/images/icons/iconIllustrator.svg"
         },
         {
             "name": "After Effects",
-            "filepath": "assets/images/logos/logoAfterEffects.svg"
+            "filepath": "assets/images/icons/iconAfterEffects.svg"
         },
         {
             "name": "Premiere",
-            "filepath": "assets/images/logos/logoPremiere.svg"
+            "filepath": "assets/images/icons/iconPremiere.svg"
         },
         {
             "name": "Adobe XD",
-            "filepath": "assets/images/logos/logoXD.svg"
+            "filepath": "assets/images/icons/iconXD.svg"
         },
         {
             "name": "Media Encoder",
-            "filepath": "assets/images/logos/logoMediaEncoder.svg"
+            "filepath": "assets/images/icons/iconMediaEncoder.svg"
         },
         {
             "name": "InDesign",
-            "filepath": "assets/images/logos/logoInDesign.svg"
+            "filepath": "assets/images/icons/iconInDesign.svg"
         },
         {
             "name": "Lightroom",
-            "filepath": "assets/images/logos/logoLightroom.svg"
+            "filepath": "assets/images/icons/iconLightroom.svg"
         }
         ]
     },
@@ -98,43 +98,43 @@
         "skills": [
         {
             "name": "Video Editing",
-            "filepath": "assets/images/logos/logoVideoEditing.svg"
+            "filepath": "assets/images/icons/iconVideoEditing.svg"
         },
         {
             "name": "Graphic Design",
-            "filepath": "assets/images/logos/logoGraphicDesign.svg"
+            "filepath": "assets/images/icons/iconGraphicDesign.svg"
         },
         {
             "name": "Motion Design",
-            "filepath": "assets/images/logos/logoMotionDesign.svg"
+            "filepath": "assets/images/icons/iconMotionDesign.svg"
         },
         {
             "name": "3D Design",
-            "filepath": "assets/images/logos/logoC4D.svg"
+            "filepath": "assets/images/icons/iconC4D.svg"
         },
         {
             "name": "Photography",
-            "filepath": "assets/images/logos/logoPhotography.svg"
+            "filepath": "assets/images/icons/iconPhotography.svg"
         },
         {
             "name": "Video Streaming",
-            "filepath": "assets/images/logos/logoOBS.svg"
+            "filepath": "assets/images/icons/iconOBS.svg"
         },
         {
             "name": "Audio Engineering",
-            "filepath": "assets/images/logos/logoAudioEngineering.svg"
+            "filepath": "assets/images/icons/iconAudioEngineering.svg"
         },
         {
             "name": "Audio Design",
-            "filepath": "assets/images/logos/logoAudioDesign.svg"
+            "filepath": "assets/images/icons/iconAudioDesign.svg"
         },
         {
             "name": "Audio Editing",
-            "filepath": "assets/images/logos/logoAudioEditing.svg"
+            "filepath": "assets/images/icons/iconAudioEditing.svg"
         },
         {
             "name": "Music Composition",
-            "filepath": "assets/images/logos/logoMusicComposition.svg"
+            "filepath": "assets/images/icons/iconMusicComposition.svg"
         }
         ]
     }
